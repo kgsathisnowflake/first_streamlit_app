@@ -1,6 +1,6 @@
 import streamlit
 
-streamlit.title('My Moms New Healthy Diner')
+streamlit.title('My Mom\'s New Healthy Diner')
 
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -26,8 +26,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+#streamlit.text(fruityvice_response)
 
 #Section to display API response
 streamlit.header("Fruityvice Fruit Advice!")
